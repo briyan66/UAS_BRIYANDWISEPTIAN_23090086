@@ -18,7 +18,7 @@ class Buah:
         print(f"Warna: {self.warna}")
         print(f"Rasa: {self.rasa}")
 
-class Mangga(Buah):
+class Jeruk(Buah):
     def _init_(self, nama, warna, rasa, vitamin):
         super()._init_(nama, warna, rasa)
         self.vitamin = vitamin
@@ -30,6 +30,5 @@ class Mangga(Buah):
         super().information()
         print(f"Vitamin: {self.vitamin}")
 
-
-mangga = Mangga("Mangga Manis", "Kuning", "Manis", "C")
-mangga.information()
+jeruk = Jeruk("jeruk", "oren", "kecut", "Z")
+jeruk.information()
